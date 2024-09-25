@@ -1,6 +1,8 @@
 import "../public/css/style.css";
 import Header from "./components/layout/Header";
 import logo from "../public/img/viulogo.png";
+import Imgcontainer from "./components/layout/Imgcontainer";
+import Img from "../public/img/imgcontainer.jpg";
 
 function App() {
   const navLinks = [
@@ -18,6 +20,8 @@ function App() {
         brandUrl="#"
         navLinks={navLinks}
       />
+
+      <Imgcontainer ImageSrc={Img} ImageAlt="Vite logo" />
     </>
   );
 }

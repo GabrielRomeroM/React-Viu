@@ -5,10 +5,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container img{
     width: 100%;
     background: white;
     margin: auto;
+    object-fit: cover;
 }
 
 .header img{
