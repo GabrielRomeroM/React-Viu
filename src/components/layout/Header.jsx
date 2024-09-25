@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Header({ ImageSrc, ImageAlt, brandUrl }) {
+function Header({ ImageSrc, ImageAlt, brandUrl, navLinks }) {
   return (
     <header>
       <nav>
@@ -9,21 +9,11 @@ function Header({ ImageSrc, ImageAlt, brandUrl }) {
             <img src={ImageSrc} alt={ImageAlt} />
           </a>
           <ul className="menu top">
-            <li>
-              <a href="#">Enlace 1</a>
-            </li>
-            <li>
-              <a href="#">Enlace 2</a>
-            </li>
-            <li>
-              <a href="#">Enlace 3</a>
-            </li>
-            <li>
-              <a href="formulario/formulario.html">Enlace 4</a>
-            </li>
-            <li>
-              <a href="ayuda/ayuda.html">Enlace 5</a>
-            </li>
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <a href={link.url}>{link.name}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
@@ -35,6 +25,7 @@ Header.propTypes = {
   ImageSrc: PropTypes.string.isRequired,
   ImageAlt: PropTypes.string.isRequired,
   brandUrl: PropTypes.string.isRequired,
+  navLinks: PropTypes.array.isRequired,
 };
 
 export default Header;
