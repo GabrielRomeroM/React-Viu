@@ -1,8 +1,9 @@
 import "../public/css/style.css";
 import Header from "./components/layout/Header";
 import logo from "../public/img/viulogo.png";
-import Imgcontainer from "./components/layout/Imgcontainer";
+import Imgcontainer from "./components/Imgcontainer";
 import Img from "../public/img/imgcontainer.jpg";
+import CardContainer from "./components/CardContainer";
 
 function App() {
   const navLinks = [
@@ -22,6 +23,7 @@ function App() {
       />
 
       <Imgcontainer ImageSrc={Img} ImageAlt="Vite logo" />
+      <CardContainer />
     </>
   );
 }
