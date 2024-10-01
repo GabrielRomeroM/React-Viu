@@ -4,7 +4,7 @@ import Card from "../components/Card";
 
 function CardContainer({ cards }) {
   const handleCard = () => {
-    console.log("Hola");
+    console.log(title);
   };
   
   return (
@@ -18,7 +18,11 @@ function CardContainer({ cards }) {
             title= {card.title}
             description= {card.description}
             buttonTitle= {card.buttonTitle}
-            action= {handleCard}
+            action= {() => {
+              handleCard(card.title);
+            }}
+            buttonColor= {card.buttonColor}
+            image= {card.image}
             />
           ))}
         </div>
@@ -35,7 +39,6 @@ CardContainer.propTypes = {
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       buttonTitle: PropTypes.string.isRequired,
-      action: PropTypes.func.isRequired,
       buttonColor: PropTypes.string,
     })
   ).isRequired,

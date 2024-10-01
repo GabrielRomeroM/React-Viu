@@ -2,7 +2,7 @@ import "../public/css/style.css";
 import Header from "./components/layout/Header";
 import logo from "/img/viulogo.png";
 import Imgcontainer from "./components/Imgcontainer";
-import Img from "../public/img/imgcontainer.jpg";
+import Img from "/img/imgcontainer.jpg";
 import CardContainer from "./components/CardContainer";
 
 
@@ -16,25 +16,26 @@ function App() {
 
   const cards = [
     {
-      image: "/img/viu.jpg",
-      imageAlt: "Vite Card Image",
       title: "Title 1",
+      image: "img/viu.jpg",
+      imageAlt: "Vite Card Image",
       description: "Description 1",
       buttonTitle: "Button 1",
     },
     {
-      image: "/img/viu.jpg",
-      imageAlt: "Vite Card Image",
       title: "Title 2",
+      image: "img/viu.jpg",
+      imageAlt: "Vite Card Image",
       description: "Description 2",
       buttonTitle: "Button 2",
     },
     {
-      image: "/img/viu.jpg",
-      imageAlt: "Vite Card Image",
       title: "Title 3",
+      image: "img/viu.jpg",
+      imageAlt: "Vite Card Image",
       description: "Description 3",
       buttonTitle: "Button 3",
+      buttonColor: "#f57600",
     }
   ]
 

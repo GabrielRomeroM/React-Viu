@@ -10,8 +10,8 @@
 .container img{
     width: 100%;
     background: white;
-    margin: auto;
-    object-fit: cover;
+    /* margin: auto;
+    object-fit: cover; */
 }
 
 .header img{
@@ -58,6 +58,11 @@
     border: 3px solid #f57600;
     border-radius: 10px;
     padding: 13px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 8px 0.1px;
+    transition: all 0.3s ease;
 }
 
 .btn{

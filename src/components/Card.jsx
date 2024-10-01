@@ -11,19 +11,21 @@ function Card({
   buttonColor,
 }) {
   return (
-    <div className="row">
-      <div className="col">
-        <h2>{title}</h2>
-        <div className="card">
-          <img src={image} alt={imageAlt} />
-          <p>{description}</p>
-          <button 
-            className="btn" 
-            onClick={action} 
-            style={{ backgroundColor: buttonColor }}
-            >
-            {buttonTitle}
-          </button>
+    <div className="container" >
+      <div className="row">
+        <div className="col">
+          <h2>{title}</h2>
+          <div className="card">
+            <img src={image} alt={imageAlt} />
+            <p>{description}</p>
+            <button 
+              className="btn" 
+              onClick={action} 
+              style={{ backgroundColor: buttonColor }}
+              >
+              {buttonTitle}
+            </button>
+          </div>
         </div>
       </div>
     </div>
