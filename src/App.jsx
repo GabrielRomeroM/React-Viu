@@ -4,6 +4,7 @@ import logo from "/img/viulogo.png";
 import Imgcontainer from "./components/Imgcontainer";
 import Img from "/img/imgcontainer.jpg";
 import CardContainer from "./components/CardContainer";
+import GalleryContainer from "./components/GalleryContainer";
 
 
 function App() {
@@ -39,6 +40,12 @@ function App() {
     }
   ]
 
+  const gallery = [
+    "img/viuCampus1.jpg",
+    "img/viuCampus2.jpg",
+    "img/viuCampus3.jpg",
+  ]
+
   return (
     <>
       <Header
@@ -50,6 +57,7 @@ function App() {
 
       <Imgcontainer ImageSrc={Img} ImageAlt="Vite logo" />
       <CardContainer cards={cards} />
+      <GalleryContainer images={gallery}  title="Gallery"/>
     </>
   );
 }
