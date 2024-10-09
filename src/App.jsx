@@ -6,6 +6,7 @@ import Img from "/img/imgcontainer.jpg";
 import CardContainer from "./components/CardContainer";
 import GalleryContainer from "./components/GalleryContainer";
 import CardTwoContainer from "./components/CardTwoContainer";
+import Footer from "./components/layout/footer";
 
 
 function App() {
@@ -70,6 +71,13 @@ function App() {
     },
   ]
 
+  const links = [
+    { name: "Name 1", url: "#" },
+    { name: "Name 2", url: "#" },
+    { name: "Name 3", url: "#" },
+    { name: "Name 4", url: "#" },
+  ]
+
   return (
     <>
       <Header
@@ -83,6 +91,7 @@ function App() {
       <CardContainer cards={cards} />
       <GalleryContainer images={gallery}  title="Gallery"/>
       <CardTwoContainer title="Card Two" cards={cardsTwo} brandUrl="#" />
+      <Footer links={links} />
     </>
   );
 }
