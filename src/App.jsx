@@ -19,21 +19,21 @@ function App() {
 
   const cards = [
     {
-      title: "Title 1",
+      title: "",
       image: "img/viu.jpg",
       imageAlt: "Vite Card Image",
       description: "Description 1",
       buttonTitle: "Button 1",
     },
     {
-      title: "Title 2",
+      title: "",
       image: "img/viu.jpg",
       imageAlt: "Vite Card Image",
       description: "Description 2",
       buttonTitle: "Button 2",
     },
     {
-      title: "Title 3",
+      title: "",
       image: "img/viu.jpg",
       imageAlt: "Vite Card Image",
       description: "Description 3",

@@ -23,7 +23,7 @@ Footer.propTypes = {
             name: PropTypes.string.isRequired,
             url: PropTypes.string.isRequired
         })
-    ).isRequired,
+    )
 }
 
 export default Footer

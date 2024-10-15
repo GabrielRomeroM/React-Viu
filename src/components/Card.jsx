@@ -35,7 +35,7 @@ function Card({
 Card.propTypes = {
   image: PropTypes.string,
   imageAlt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string.isRequired,
   buttonTitle: PropTypes.string.isRequired,
   action: PropTypes.func.isRequired,

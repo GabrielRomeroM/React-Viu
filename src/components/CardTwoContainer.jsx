@@ -6,7 +6,7 @@ function CardTwoContainer({ title, cards, brandUrl}) {
         <div className="container-card">
             <h2> {title} </h2>
             <div className="col-card">
-                <div className="card">
+                
                     {/* <a href={brandUrl}> */}
                     {cards.map(( card, index) => (
                         <CardTwoItem 
@@ -18,7 +18,7 @@ function CardTwoContainer({ title, cards, brandUrl}) {
                         />
                     ))}
                     {/* </a> */}
-                </div>    
+                
             </div>
         </div>
     );

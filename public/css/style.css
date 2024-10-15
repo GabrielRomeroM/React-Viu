@@ -1,6 +1,6 @@
 * {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -12,17 +12,14 @@
     background: white;
 }
 
-.header img{
-    width: 300px;
-    height: 100px;
-}
-
 .top{
     margin-top: 30px;
+    text-align: center;
 }
 
 .menu{
     float: right;
+    
 }
 
 .menu li{
@@ -40,11 +37,10 @@
 }
 
 .col{
-    width: 350px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: justify;
+    display: flex;
+    justify-content: center;
     padding: 20px;
+    margin: auto;
 }
 
 .col h2{
@@ -105,11 +101,14 @@ section.gallery .gallery-container{
 .col-card{
     display: flex;
     justify-content: center;
-    max-width: 1000px;
     padding: 20px;
     margin: auto;
     gap: 20px;
     text-align: center;
+}
+
+.col-card img{
+    width: 280px;
 }
 
 .footer{
