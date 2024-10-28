@@ -10,9 +10,9 @@ import Footer from "./components/layout/footer";
 
 
 function App() {
-  const navLinks = [
-    { name: "Name 1", url: "#" },
-    { name: "Name 2", url: "#" },
+  const NavLink = [
+    { name: "Name 1", url: "Ayuda" },
+    { name: "Name 2", url: "Formulario" },
     { name: "Name 3", url: "#" },
     { name: "Name 4", url: "#" },
   ];
@@ -84,7 +84,7 @@ function App() {
         ImageSrc={logo}
         ImageAlt="Vite logo"
         brandUrl="#"
-        navLinks={navLinks}
+        navLinks={NavLink}
       />
 
       <Imgcontainer ImageSrc={Img} ImageAlt="Vite logo" />

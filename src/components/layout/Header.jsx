@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 function Header({ ImageSrc, ImageAlt, brandUrl, navLinks }) {
   return (
@@ -11,7 +12,7 @@ function Header({ ImageSrc, ImageAlt, brandUrl, navLinks }) {
           <ul className="menu top">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.url}>{link.name}</a>
+                <NavLink to={link.url}>{link.name}</NavLink>
               </li>
             ))}
           </ul>
