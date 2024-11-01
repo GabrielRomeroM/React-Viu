@@ -1,11 +1,11 @@
-// import "../../../public/css/formulario.css";
+import "../../../public/css/formulario.css";
 
 function Formulario() {
   return (
     <>
-      <body>
-        <header>
-          <nav className="header">
+      <body className="body-container">
+        <header className="header-page">
+          <nav className="header-container">
             <div className="logo-container">
               <img src="img/viulogo.png" alt="Logo" />
             </div>

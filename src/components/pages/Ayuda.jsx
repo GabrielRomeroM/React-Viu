@@ -1,11 +1,11 @@
-// import "../../../public/css/ayuda.css";
+import "../../../public/css/ayuda.css";
 
 function Ayuda() {
   return (
     <>
-      <body>
-        <header>
-          <nav>
+      <body className="body-ayuda">
+        <header className="header-ayuda">
+          <nav className="nav-container-ayuda" >
             <div className="logo-container">
               <img src="img/viulogo.png" alt="Logo" />
             </div>

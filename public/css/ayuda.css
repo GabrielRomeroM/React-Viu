@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.body-ayuda {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -14,23 +14,18 @@ body {
     height: 100vh;
 }
 
-header {
-    width: 100%;
-    background-color: white;
-}
-
-header nav {
+.header-ayuda .nav-container-ayuda {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-header img {
+.header-ayuda img {
     height: 120px;
 }
 
-header ul {
+.header-ayuda ul {
     list-style: none;
     display: flex;
     align-items: center;
